@@ -88,11 +88,9 @@ Similar as plot tree from a NEWICK file, pass a double quote surrounded NEWICK
 string will allow you to plot tree in a even more easier way. After running the
 command you will see the tree was plotted in a window:
 
-.. figure:: figures/SimpleTree.png
+.. figure:: https://raw.githubusercontent.com/iBiology/plottree/master/figures/SimpleTree.png
     :alt: Simple tree
     :align: center
-
-    A example for a simple tree
 
 .. Note::
 
@@ -117,7 +115,7 @@ You can added a black boarded for the tree figure by adding ``-b`` flag::
 
 It will show you a figure like this:
 
-.. figure:: figures/BoxedTree.png
+.. figure:: https://raw.githubusercontent.com/iBiology/plottree/master/figures/BoxedTree.png
     :alt: Boxed tree
     :align: center
 
@@ -133,11 +131,9 @@ Assume you plot a tree in a file (``tree.newick``) using the following command::
 
 And the tree displayed like this:
 
-.. figure:: figures/CrowedTree.png
+.. figure:: https://raw.githubusercontent.com/iBiology/plottree/master/figures/CrowedTree.png
     :alt: Crowded tree
     :align: center
-
-    An example of a crowded tree
 
 Then you can try to decrease the fontsize to make it looks better::
 
@@ -145,7 +141,7 @@ Then you can try to decrease the fontsize to make it looks better::
 
 This will make the tree looks like this:
 
-.. figure:: figures/FontsizeTree.png
+.. figure:: https://raw.githubusercontent.com/iBiology/plottree/master/figures/FontsizeTree.png
     :alt: Small fontsize tree
     :align: center
 
@@ -155,7 +151,7 @@ You can also try to increase the height (-l) to make the tree looks better::
 
     $ python plottree/plottree.py tree.newick -l 8.4
 
-.. figure:: figures/HeightTree.png
+.. figure:: https://raw.githubusercontent.com/iBiology/plottree/master/figures/HeightTree.png
     :alt: Figure height increased tree
     :align: center
 
