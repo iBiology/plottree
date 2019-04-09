@@ -186,20 +186,24 @@ Q&A
 ===
 
 Q: Do I need to have Python to use ``plottree``:
+
 A: Yes, ``plottree`` is not a standalone program, it is a Python package with an
 executable script made available for user once the package was installed.
 
 Q: Which Python version do I need to use? Python 2 or 3?
+
 A: It does not matter, it works well under both version. However, I do
 recommend you to use Python 3 for future compatibility.
 
 Q: Is there any dependency for ``plottree``?
+
 A: Yes, ``plottree`` was built on top of ``matplotlib`` and ``Biopython.Phylo``
 module. If you install ``plottree`` using ``pip``, they will be automatically
 installed if they are not installed yet.
 
 Q: Why it tells me "'plottree' is not recognized as an internal or external
 command, operable program or batch file"?
+
 A: Make sure you successfully installed ``plottree`` first. Then, make sure
 ``C:PythonX\\Scripts`` folder was added to your system path, if you installed
 Python with the default options. If you installed Python with other options,
@@ -207,12 +211,14 @@ find the Scripts folder under Python installation folder and make sure the
 folder was added to your system path and try again.
 
 Q: Why it tells me "-bash: plottree: command not found"?
+
 A: Make sure you successfully installed ``plottree`` first. Then, make sure the
 executable script generated during ``plottree`` installation was installed to a
 location that included into your ``PATH``, if not, add the location to PATH.
 
 Q: After I run the command, why it does not release the prompt even I append
 "&" after the command and try to put it running background?
+
 A: It was intentionally designed like this. If you want to take your prompt
 back, just close the figure window, and the prompt will come back
 automatically. Once you need to see the figure again, just re-run the command.
