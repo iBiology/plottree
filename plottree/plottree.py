@@ -139,7 +139,6 @@ def main():
                              'min and max.')
     parser.add_argument('-o', '--output', help='Save the figure into a file.')
 
-    args = parser.parse_args()
     if len(sys.argv) > 1:
         if sys.argv[1] in ['-h', '--help']:
             print(__doc__.rstrip())
@@ -149,9 +148,8 @@ def main():
                  args.name, args.size, args.width, args.height, args.xlim,
                  args.ylim, args.output)
     else:
-        # print(__doc__.rstrip())
-        pass
+        print(__doc__.rstrip())
+
 
 if __name__ == '__main__':
     main()
-    
