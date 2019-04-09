@@ -7,7 +7,8 @@ PLOTTREE - Plot a phylogenetic tree with just a single line of code.
 Usage: plottree TREE [options]
 
 positional arguments:
-  TREE                  A tree in NEWCIK format file or string.
+  TREE                  A tree in NEWCIK format file or string (surrounded by
+                        double quotes).
 
 optional arguments:
   -h, --help            show this help message and exit.
@@ -148,3 +149,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
