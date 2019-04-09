@@ -119,8 +119,6 @@ It will show you a figure like this:
     :alt: Boxed tree
     :align: center
 
-    Tree inside a box
-
 For big trees (or trees with several leaves), tree branches will be crowded or
 even overlapped with each other, you can tune the tree figure by several ways,
 like decreasing fontsize (-s), increasing width (-w) and/or height (-l).
@@ -145,8 +143,6 @@ This will make the tree looks like this:
     :alt: Small fontsize tree
     :align: center
 
-    A crowded tree was relieved by decreasing fontsize
-
 You can also try to increase the height (-l) to make the tree looks better::
 
     $ python plottree/plottree.py tree.newick -l 8.4
@@ -154,8 +150,6 @@ You can also try to increase the height (-l) to make the tree looks better::
 .. figure:: https://raw.githubusercontent.com/iBiology/plottree/master/figures/HeightTree.png
     :alt: Figure height increased tree
     :align: center
-
-    A crowded tree was relieved by increasing figure height
 
 Once you think the tree figure is good enough, you can save it by hit the
 save icon in the figure windows or re-run the command with ``-o <output>``

@@ -11,16 +11,20 @@ positional arguments:
                         double quotes).
 
 optional arguments:
-  -h, --help            show this help message and exit.
+  -h, --help            show this help message and exit
   -a, --axes            Display ticks for x and y axes.
   -b, --box             Display the tree inside a box.
-  -m TOP BOTTOM LEFT RIGHT, --margin TOP BOTTOM LEFT RIGHT
-                        Set the margins of the figure, four numbers in the
-                        order of top bottom left and right.
+  -c, --confidence      Display confidence values, if present on the tree.
+  -n, --name            Display name for internal node, if present on the
+                        tree.
   -s SIZE, --size SIZE  Set the fontsize of leaf and node names.
-  -x MIN MAX, --xlim MIN MAX
+  -w WIDTH, --width WIDTH
+                        Set the width of the figure.
+  -l HEIGHT, --height HEIGHT
+                        Set the height of the figure
+  -x XLIM XLIM, --xlim XLIM XLIM
                         Set the limits for x-axis, two numbers for min and max.
-  -y MIN MAX, --ylim MIN MAX
+  -y YLIM YLIM, --ylim YLIM YLIM
                         Set the limits for y-axis, two numbers for min and max.
   -o OUTPUT, --output OUTPUT
                         Save the figure into a file.
@@ -97,7 +101,7 @@ def plot(tree, axes, box, confidence, name, size, width, height, x, y, output):
         settings.append(f'output figure to file (-o): {output}')
         fig.savefig(output)
 
-    print('Plotting tree using the following setting:')
+    print('\nPlotting tree using the following setting:')
     print('\t{}'.format('\n\t'.join(settings)))
     print('Feel free to modify them to tune the figure nice.')
     
@@ -135,6 +139,7 @@ def main():
                              'min and max.')
     parser.add_argument('-o', '--output', help='Save the figure into a file.')
 
+    args = parser.parse_args()
     if len(sys.argv) > 1:
         if sys.argv[1] in ['-h', '--help']:
             print(__doc__.rstrip())
@@ -144,8 +149,8 @@ def main():
                  args.name, args.size, args.width, args.height, args.xlim,
                  args.ylim, args.output)
     else:
-        print(__doc__.rstrip())
-
+        # print(__doc__.rstrip())
+        pass
 
 if __name__ == '__main__':
     main()
