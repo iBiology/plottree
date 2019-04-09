@@ -68,7 +68,7 @@ Plot a tree in a NEWICK file::
 window. In the terminal, it will display the parameters and their
 corresponding values used for plotting the current figure. If you want to tune
 the figure a little bit, just close the figure window and you will get your
-terminal back. Inside the terminal, retrieve the last command and add some
+terminal back. Inside the terminal, retrieve the last command, add some
 additional parameters and run the command again. Repeat and try the optional
 parameters until you get a ideal figure.
 
@@ -84,7 +84,7 @@ Plot a tree in a NEWICK string::
           ylim(-y): 5.80, 0.20
       Feel free to modify them to tune the figure nice.
 
-Similar as plot tree from a NEWICK file, pass a double quotes surrounded NEWICK
+Similar as plot tree from a NEWICK file, pass a double quote surrounded NEWICK
 string will allow you to plot tree in a even more easier way. After running the
 command you will see the tree was plotted in a window:
 
@@ -96,7 +96,7 @@ command you will see the tree was plotted in a window:
 
 .. Note::
 
-    Double quotes surrounded NEWICK string as input is required. Depending on
+    Double quote surrounded NEWICK string as input is required. Depending on
     the setting of your system (more specifically, the setting of
     ``matplotlib``), the displayed parameters may be different from what you
     are seeing from here. No need to worry about that, just play around with
@@ -129,7 +129,7 @@ like decreasing fontsize (-s), increasing width (-w) and/or height (-l).
 
 Assume you plot a tree in a file (``tree.newick``) using the following command::
 
-    $ plottreee tree.newick
+    $ plottree tree.newick
 
 And the tree displayed like this:
 
